@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+ 
+      function onBodyLoad() {
+      // var element =document.querySelector("#img1");
+      
+      	var element=document.getElementById("img1");
+        var data = window.javascriptAccessor.getYerData(element); 
+        element.src = data; 
+        
+        //document.write (data);
+        //document.getElementById("img1").src=data;
+        //element.attr("src",data);
+      }
+    </script> 
+</head>
+
+<body onload="onBodyLoad()">
+<img src="footer_icon2_selected.png" id="img1"></img>
+</body>
+</html>
+
+

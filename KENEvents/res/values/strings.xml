@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KEN Events</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="artsncrafts">Arts \u0026 Crafts</string>
+    <string name="forgotpwd"> <u>Forgot Password ?</u></string>
+    <string name="nwuser"> New User ?</string>
+     <string name="autologin">Auto Login </string>
+     <string name="click"><u>Click Here</u> </string>
+     <string name="terms"> <u>Terms \u0026 Condition</u></string>
+     <string name="share_twitter"></string>
+  <string  name="share_facebook"></string>
+    <string name="share_sms"></string>
+    <string name="share_email_gmail"></string>
+    <string name="share_email_subject">Event Detail is</string>
+
+</resources>

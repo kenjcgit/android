@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/notificationsettings_header_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            layout="@layout/header" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/notiseeting_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_moretitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Notification Settings"
+                        android:textColor="#1284E9"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/notiseeting_sub_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_newevent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="New Event Notification"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_newevent_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_newevent_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_genannounce"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="General Announcement"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_genannounce_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_genannounce_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_actreminder"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Activity Reminder"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_actreminder_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_actreminder_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_eventreminder"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Event Reminder"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_eventreminder_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_eventreminder_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_muteall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Mute All Notifications"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_noti_muteall_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_muteall_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_adultactivities"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Adult Activities"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_adultact_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_adultact_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_youth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Youth Activities"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_youth_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_youth_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_minimaccabi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Mini Maccabi activities"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_minimaccabi_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_minimaccabi_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_bogrim"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Bogrim (young adults)"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_bogrim_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_bogrim_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/notiseeting_sub_ll10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="#D5D5D5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_noti_noncommunity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Non-community events"
+                            android:textColor="#3184DC" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_noncommunity_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_on"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_noti_noncommunity_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/switch_off" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

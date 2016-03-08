@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/signup_header_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            layout="@layout/header" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@+id/ll_loginmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/signup_main_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/signup_gallary_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Gallery
+                        android:id="@+id/signupgallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signinscreen_img" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/signup_sub_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/signup_sub_ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <com.fipl.kenjc.Utils.MyEditText
+                            android:id="@+id/et_signup_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/txtbox_big"
+                            android:hint="Enter Your Name"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+                        <com.fipl.kenjc.Utils.MyEditText
+                            android:id="@+id/et_signup_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/txtbox_big"
+                            android:hint="Enter Email Address"
+                            android:inputType="textEmailAddress"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+                        <com.fipl.kenjc.Utils.MyEditText
+                            android:id="@+id/et_signup_phnno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/txtbox_big"
+                            android:hint="Enter Phone Number"
+                            android:inputType="phone"
+                            android:padding="3dp"
+                            android:singleLine="true"
+                            android:textSize="12sp" />
+
+                        <com.fipl.kenjc.Utils.MyEditText
+                            android:id="@+id/et_signup_pwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/txtbox_big"
+                            android:hint="Enter Password"
+                            android:inputType="textPassword"
+                            android:padding="3dp"
+                            android:textSize="12sp" />
+
+                        <com.fipl.kenjc.Utils.MyEditText
+                            android:id="@+id/et_signup_cpwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/txtbox_big"
+                            android:hint="Re-Enter Password"
+                            android:inputType="textPassword"
+                            android:padding="3dp"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/signup_sub_ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <RadioGroup
+                            android:id="@+id/signup_rg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            android:padding="5dp" >
+
+                            <RadioButton
+                                android:id="@+id/rb_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/opt_btn_unselected"
+                                android:padding="3dp"
+                                android:text="Male"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <RadioButton
+                                android:id="@+id/rb_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:button="@drawable/opt_btn_unselected"
+                                android:gravity="right|center_vertical"
+                                android:padding="3dp"
+                                android:text="Female"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </RadioGroup>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:padding="5dp" >
+
+                            <TextView
+                                android:id="@+id/tv_signup_birthdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bdate_txtbox"
+                                android:gravity="left|center_vertical"
+                                android:padding="4dp"
+                                android:text="Select Birth Date"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/signup_sub_ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center"
+                            android:orientation="horizontal"
+                            android:padding="5dp" >
+
+                            <CheckBox
+                                android:id="@+id/cb_terms"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:button="@drawable/unchecked"
+                                android:gravity="center"
+                                android:padding="4dp" />
+
+                            <TextView
+                                android:id="@+id/tv_accept"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="I accept"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:id="@+id/tv_termsncond"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:text="@string/terms"
+                                android:textColor="#1569C7" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/signup_sub_ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/bt_signup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/submit_cancel_btn"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Sign Up"
+                            android:textColor="#ffffff" />
+
+                        <Button
+                            android:id="@+id/bt_signup_cancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/submit_cancel_btn"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Cancel"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
